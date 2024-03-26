@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Call</title>
+</head>
+<body>
+    <div class="card show" id="cardStart">
+        <h2>The Call</h2>
+        <p>It's 11:49PM in the evening and your phone rings.</p>
+        <div class="buttons">
+            <button onclick="nextCard('card1')">PLAY</button>
+        </div>
+    </div>
+
+    
+    <div class="card" id="card1">
+        <h2>The Call</h2>
+        <p>*Phone ringing...*</p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2')">Answer</button>
+            <button onclick="nextCard('card1A2B3')">Decline</button>
+            <button onclick="nextCard('card1C2')">Voicemail</button>
+        </div>
+    </div>
+    
+    <div class="card" id="card1A2">
+        <h2>The Call</h2>
+        <p>You recognize the voice of a man crying while talking. <br><br><i>"Hey man, I am so sorry for his past few days I haven't been with the squad. I've been feeling lost and don't know what else to do. "</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2A3')">Answer back with comfort</button>
+            <button onclick="nextCard('card1A2B3')">Ask who the person is and tell them to talk tomorrow</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1A2A3">
+        <h2>The Call</h2>
+        <p><i>"Remember Jimmy, even in the darkest moments, you're not alone. I'm here for you, and together we'll navigate through this. Your strength is remarkable, and I believe in you."</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2A3A4')">CONTINUE</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1A2A3A4">
+        <h2>The Call</h2>
+        <p><i>"Thank you for reminding me man, can you come over?"<br>-Jimmy</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2B3')">Can't go because it is very late at night</button>
+            <button onclick="nextCard('card1A2A3A4B5')">Yeah sure, I'll tag along the rest of the squad.    </button>
+        </div>
+    </div>
+
+    <div class="card" id="card1A2A3A4B5">
+        <h2>The Call</h2>
+        <p>You drive the rest of the squad to Jimmy's place and spend the rest of the night talking and reminiscing all the good times. </p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2A3A4B5A6')">CONTINUE</button>
+        </div>
+    </div>
+
+    <div class="card card-happy" id="card1A2A3A4B5A6">
+        <h2>The Call</h2>
+        <p>Hey there,
+            <br>
+            Have you noticed someone close to you acting a bit different lately? Maybe they seem a little withdrawn or their usual sparkle isn't as bright? It's possible they're going through something tough, but they're keeping it bottled up.
+            <br><br>
+            Let's change that. Reach out to them. A simple conversation could make a world of difference. Let them know you're there to listen without judgment. Sometimes, all it takes is a caring ear to lift the weight off their shoulders.
+            <br> <br>
+            And if you're unsure of what to say or how to approach the topic, that's okay. Just being there to offer your support can mean everything. Your presence alone can bring comfort.
+            <br><br>
+            If you or someone you know needs immediate support, don't hesitate to reach out to a <a href="https://www.facebook.com/HopelinePH/">hotline</a>. They're available 24/7 to lend a compassionate ear and provide guidance.
+            <br><br>
+            Together, let's create a supportive community where no one feels alone in their struggles. Your kindness and understanding could be the beacon of light someone desperately needs.
+            <br><br>
+            Take care,
+            <br><br>
+            Jake</p>
+        <div class="buttons">
+            <button onclick="nextCard('cardStart')">Thank you for playing!</button>
+        </div>
+    </div>
+
+    <div class="card card-sad" id="card1A2B3">
+        <h2>The Call</h2>
+        <p>You went back to sleep. <br><br>**The next morning you receive a text from one of your friend, "Jimmy took his own life"</p>
+        <div class="buttons">
+            <button onclick="nextCard('cardStart')">You missed a chance to help your friend</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1C2">
+        <h2>The Call</h2>
+        <p>You recognize the voice of a man crying while talking. <br><br><i>"Hey man, I've been feeling messed up lately. I'm sorry for not attending the gathering with the squad. Maybe I can't gather with you guys anymore. <b>Good bye</b>"</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1C2A3')">Call back</button>
+            <button onclick="nextCard('card1C2B3')">Call 911</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1C2A3">
+        <h2>The Call</h2>
+        <p><i>Calling Jimmy</i><br><br>
+            *Phone rings...* <br><br>
+            <i>"Hello dude, Jimmy, where you at right now? I'm on my way to you"</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2A3')">Talk to Jimmy</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1C2B3">
+        <h2>The Call</h2>
+        <p>911 Hotline: <i>"911, what's your emergency?"</i></p>
+        <p>You: <i>"Hello, my friend is alone right now and he sounded like trying to hurt himself. He's at West Boulevard of Pusok near the School."<i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1C2B3A4')">CONTINUE</button>
+        </div>
+    </div>
+
+    <div class="card" id="card1C2B3A4">
+        <h2>The Call</h2>
+        <p>911 Hotline: <i>Okay sir, hang on tight. Help is on the way.</i></p>
+        <div class="buttons">
+            <button onclick="nextCard('card1A2A3A4B5')">Go to Jimmy's house</button>
+            <button onclick="nextCard('card1C2B3A4B5')">Go back to sleep.</button>
+        </div>
+    </div>
+
+    <div class="card card-sad" id="card1C2B3A4B5">
+        <h2>The Call</h2>
+        <p>You then went back to sleep.. **The next morning you receive a text from one of your friend, "The paramedics didn't make in time. He's gone now."</p>
+        <div class="buttons">
+            <button onclick="nextCard('cardStart')">You missed a chance to help your friend.</button>
+        </div>
+    </div>
+
+    <!-- COMMENT  -->
+    <div class="card" id="card">
+        <h2>The Call</h2>
+        <div class="buttons">
+            <button onclick="nextCard('cardStart')">Option 1</button>
+            <button onclick="nextCard('cardStart')">Option 2</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
